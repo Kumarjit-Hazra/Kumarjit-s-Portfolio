@@ -5,8 +5,12 @@ import { GoogleGenAI } from "@google/genai";
 // For this demo, we assume process.env.API_KEY is available.
 let ai: GoogleGenAI | null = null;
 
+console.log('API_KEY check:', process.env.API_KEY ? 'Key exists' : 'Key missing');
+console.log('API_KEY length:', process.env.API_KEY?.length || 0);
+
 if (process.env.API_KEY) {
   ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+  console.log('Gemini AI initialized successfully');
 }
 
 const SYSTEM_INSTRUCTION = `
