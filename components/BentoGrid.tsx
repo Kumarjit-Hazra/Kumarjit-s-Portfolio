@@ -113,8 +113,6 @@ export const BentoGrid: React.FC = () => {
       {/* Contact Card - Beside Image Card - Wider and Horizontal */}
       <motion.a 
         href="mailto:kumarjithazra43@gmail.com?subject=Hello%20Kumarjit&body=Hi%20Kumarjit,%0D%0A%0D%0A"
-        target="_blank"
-        rel="noopener noreferrer"
         variants={item} 
         className="col-span-1 md:col-span-2 lg:col-span-2 row-span-1 bg-black dark:bg-white text-white dark:text-black rounded-3xl p-6 flex flex-col justify-between group cursor-pointer hover:bg-nothing-red dark:hover:bg-nothing-red dark:hover:text-white transition-colors duration-300 relative overflow-hidden"
       >
@@ -259,8 +257,6 @@ export const BentoGrid: React.FC = () => {
       {/* Contact Card - After About Section */}
       <motion.a 
         href="mailto:kumarjithazra43@gmail.com?subject=Hello%20Kumarjit&body=Hi%20Kumarjit,%0D%0A%0D%0A"
-        target="_blank"
-        rel="noopener noreferrer"
         variants={item} 
         className="col-span-1 md:col-span-3 lg:col-span-4 bg-black dark:bg-white text-white dark:text-black rounded-3xl p-8 flex flex-col md:flex-row justify-between items-center group cursor-pointer hover:bg-nothing-red dark:hover:bg-nothing-red dark:hover:text-white transition-colors duration-300 relative overflow-hidden mt-4"
       >
