@@ -1,15 +1,14 @@
 import { GoogleGenAI } from "@google/genai";
 
 // Initialize the API client
-// Note: In a real production app, ensure your API key is secure.
-// For this demo, we assume process.env.API_KEY is available.
+const API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
 let ai: GoogleGenAI | null = null;
 
-console.log('API_KEY check:', process.env.API_KEY ? 'Key exists' : 'Key missing');
-console.log('API_KEY length:', process.env.API_KEY?.length || 0);
+console.log('API_KEY check:', API_KEY ? 'Key exists' : 'Key missing');
+console.log('API_KEY length:', API_KEY?.length || 0);
 
-if (process.env.API_KEY) {
-  ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+if (API_KEY) {
+  ai = new GoogleGenAI({ apiKey: API_KEY });
   console.log('Gemini AI initialized successfully');
 }
 
