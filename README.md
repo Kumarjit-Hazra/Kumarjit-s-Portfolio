@@ -166,7 +166,7 @@ An innovative portfolio website that showcases modern web development capabiliti
     └── images/                  # Project screenshots and visuals
 ```
 
-## 🚀 Installation
+
 
 ### Prerequisites
 - **Node.js** (v18 or higher recommended)
