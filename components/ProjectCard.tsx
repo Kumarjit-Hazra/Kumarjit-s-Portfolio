@@ -69,8 +69,8 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, onViewReadme 
          </div>
       </div>
 
-      {/* Footer with Tags and Button */}
-      <div className="mt-4 pt-3 border-t border-zinc-100 dark:border-zinc-800/50 space-y-3 relative z-10">
+      {/* Footer with Tags */}
+      <div className="mt-4 pt-3 border-t border-zinc-100 dark:border-zinc-800/50 relative z-10">
          <div className="flex flex-wrap gap-2">
            {project.tags.map((tag) => (
                <span key={tag} className="text-[9px] font-mono text-zinc-400 dark:text-zinc-500 uppercase tracking-wider">
@@ -78,17 +78,6 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, onViewReadme 
                </span>
            ))}
          </div>
-         
-         {/* View Details Button */}
-         {project.readmePath && (
-           <button
-             onClick={handleViewDetails}
-             className="w-full py-2 px-4 bg-zinc-100 dark:bg-zinc-800 hover:bg-nothing-red hover:dark:bg-nothing-red text-zinc-700 dark:text-zinc-300 hover:text-white text-xs font-medium rounded-lg transition-all duration-300 flex items-center justify-center gap-2 group/btn"
-           >
-             <span>View Details</span>
-             <ArrowUpRight size={14} className="group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform" />
-           </button>
-         )}
       </div>
       
       {/* Hover Background Gradient */}
