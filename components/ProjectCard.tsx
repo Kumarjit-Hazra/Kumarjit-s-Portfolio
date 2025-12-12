@@ -38,8 +38,8 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, onViewReadme 
       className="group flex flex-col justify-between h-full w-full bg-white dark:bg-zinc-900 rounded-[24px] border border-zinc-200 dark:border-zinc-800 p-6 hover:border-nothing-red/50 dark:hover:border-nothing-red/50 transition-all duration-300 relative overflow-hidden"
     >
       <div className="flex flex-col gap-5 relative z-10">
-         {/* Top Row: Image beside Title + Arrow */}
-         <div className="flex justify-between items-start gap-4">
+         {/* Top Row: Image beside Title */}
+         <div className="flex items-start gap-4">
              <div className="flex items-center gap-4 flex-1">
                 <div 
                   onClick={handleImageClick}
@@ -61,10 +61,6 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, onViewReadme 
                         {project.description}
                     </p>
                 </div>
-             </div>
-             
-             <div className="w-8 h-8 rounded-full bg-transparent group-hover:bg-zinc-100 dark:group-hover:bg-zinc-800 flex items-center justify-center transition-colors flex-shrink-0">
-                 <ArrowUpRight size={16} className="text-zinc-400 group-hover:text-nothing-red transition-colors" />
              </div>
          </div>
       </div>
